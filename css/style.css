@@ -9,17 +9,26 @@
     font-style: normal;
 }
 
+body{
+    margin: 0;
+}
+
+/* Configuração dos blocos */
 .containerFull{
     width: 100%;
     display: block;
 }
 
-.header{
-    background: #fff159;
+.containerCenter{
+    width: 100%;
+    max-width: 1120px;
+    display: table;
+    margin: 0 auto;
 }
 
-body{
-margin: 0;
+/* Inicia header do site */
+.header{
+    background: #fff159;
 }
 
 .header__up{
@@ -147,7 +156,7 @@ margin: 0;
     color: #736c28
 }
 
-.header__down--text {
+.header__down--text{
     width: calc(100% - 24px);
     height: 39px;
     display: inline-flex;
@@ -175,3 +184,111 @@ margin: 0;
     font-size: 10px;
     color:#c1b74d;
 }
+
+/* Finaliza header do site */
+
+/* Inicia slide principal do site */
+
+.mainSlide{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.mainSlide__img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.mainSlide__img img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* inicia a configuração das setas */
+
+.mainSlide .slick-arrow{
+    position: absolute;
+    background: transparent;
+    border: 0;
+    text-indent: -9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none!important; /* Retirar para usar as setas do slide */
+}
+
+.mainSlide .slick-arrow::after{
+    display: block;
+    font-family: 'icomoon';
+    font-size: 18px;
+    text-indent: 0;
+}
+
+.mainSlide .slick-prev{
+    left: 10px;
+    z-index: 1;
+}
+
+.mainSlide .slick-prev::after{
+    content: '\e904';
+    font-family: 'icomoon';
+}
+
+.mainSlide .slick-next{
+    right: 10px;
+}
+
+.mainSlide .slick-next::after{
+    content: '\e903';
+    font-family: 'icomoon';
+}
+
+/* Finaliza a configuração das setas */
+
+/* Inicia a configuração dos dots */
+    
+.mainSlide .slick-dots{
+    width: auto;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 10px;
+}
+
+.mainSlide .slick-dots li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+}
+
+.mainSlide .slick-dots li button{
+    width: 6px;
+    height: 6px;
+    display: inline-block;
+    text-indent: -9999px;
+    background: rgba(255, 255, 255, .6);
+    border: 1px solid #666;
+    border-radius: 50%;
+    padding: 0;
+    transition: all linear .5s;
+}
+
+.mainSlide .slick-dots .slick-active button{
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    transition: all linear .5s;
+}
+
+/* Finaliza a configuração dos dots */
+
+/* Finaliza slide principal do site */
