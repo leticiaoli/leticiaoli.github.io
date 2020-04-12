@@ -1,0 +1,177 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('../font/icomoon.eot');
+    src: url('../font/icomoon.eot?#iefix') format('embedded-opentype'),
+    url('../font/icomoon.woff') format('woff'),
+    url('../font/icomoon.ttf') format('truetype'),
+    url('../font/icomoon.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.containerFull{
+    width: 100%;
+    display: block;
+}
+
+.header{
+    background: #fff159;
+}
+
+body{
+margin: 0;
+}
+
+.header__up{
+    width: calc(100% - 20px);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    border-bottom: 1px solid #c1b74d;
+}
+
+.header__up--logo{
+    width: 45px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.header__up--logo img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.header__up--busca{
+    width: calc(100% - 135px);
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.header__up--buscaBtn{
+    width: 40px;
+    height: 32px;
+    display: inline-block;
+    background: #fff;
+    border: 0;
+    position: relative;
+    border-radius: 3px 0 0 3px;
+}
+
+.header__up--buscaBtn::after{
+    content: '\e905';
+    font-family: 'icomoon';
+    display: block;
+    color: #aaa;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.header__up--buscaInput{
+    width: calc(100% - 40px);
+    height: 32px;
+    padding: 0;
+    border: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+.header__up--buscaInput::-webkit-input-placeholder {
+    color: #aaa;
+}
+  
+.header__up--buscaInput::-moz-placeholder {  /* Firefox 19+ */
+    color: #aaa;  
+}
+  
+.header__up--buscaInput:-ms-input-placeholder {  
+    color: #aaa;  
+}
+
+.header__up--btnMenu{
+    width: 30px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.header__up--btnMenu::after{
+    content: '\e900';
+    font-family: 'icomoon';
+    font-size: 23px;
+    font-weight: 100;
+}
+
+.header__up--carrinho{
+    width: 30px;
+    height: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__up--carrinho::after{
+    content: '\e901';
+    font-family: 'icomoon';
+    font-size: 23px;
+}
+
+.header__down{
+    width: calc(100% - 36px);
+    height: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+}
+
+.header__down--iconMarker{
+    width: 12px;
+    height: 39px;
+    display: inline-flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.header__down--iconMarker a::after{
+    content: '\e902';
+    font-family: 'icomoon';
+    font-weight: 650;
+    font-size: 15px;
+    color: #736c28
+}
+
+.header__down--text {
+    width: calc(100% - 24px);
+    height: 39px;
+    display: inline-flex;
+    justify-content: end;
+    align-items: center;
+    margin: 0 5px;
+}
+
+.header__down--text a{
+    font-size: 12px;
+    color: #736c28;
+}
+
+.header__down--iconArrow{
+    width: 12px;
+    height: 39px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__down--iconArrow a::after{
+    content: '\e903';
+    font-family: 'icomoon';
+    font-size: 10px;
+    color:#c1b74d;
+}
