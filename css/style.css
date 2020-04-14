@@ -9,6 +9,10 @@
     font-style: normal;
 }
 
+*{
+    font-family: 'Proxima Nova';
+}
+
 body{
     margin: 0;
 }
@@ -292,3 +296,147 @@ body{
 /* Finaliza a configuração dos dots */
 
 /* Finaliza slide principal do site */
+
+.mainPayment{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   background-color: white;  
+}
+
+.mainPayment__card{
+    width: 47px;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 16px 0 0;
+    border: solid #ccc 0.50px;
+    border-radius: 50%;
+}
+
+.mainPayment__card img{
+    width: 32px;
+    height: 30px;
+    display: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainPayment__info p{
+    width: 100%;
+    height: 25px;
+    margin: 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.mainPayment__info a{
+    width: 100%;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-size: 14px;
+}
+
+/* inicio vitrine*/
+
+.mainRecommendations__list{
+    width: 100%;
+    height: auto;
+    background-color: #ebebeb;
+    display: block;
+    padding-top: 10px;
+}
+
+.mainRecommendations__header{
+    width: calc(100% - 20px);
+    height: 50px;
+    margin: 24px 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 5px 5px 0 0;
+}
+
+.mainRecommendations__header a{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 16px;
+    font-size: 18px;
+    color: #333;
+}
+
+.mainRecommendations__itenslist{
+    background: brown;
+    margin: 0 10px;
+    display: block;
+    border-top: 1px solid #ededed;
+}
+
+.mainRecommendations__itensList--item{
+    width:100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: chartreuse;
+    border-top: 1px solid #ededed;
+}
+
+.mainRecommendations__itensList--item img{
+    width: 104px;
+    height: 104px;
+    display: inline-block;
+}
+
+.mainRecommendations__itenslist--info{
+    width: calc(100% - 104px);
+    height: auto;
+    padding: 7px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.mainRecommendations__itenslist--name{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.mainRecommendations__itenslist--name p{
+    font-size: 15px;
+    background-color: chocolate;
+}
+
+.mainRecommendations__itensList--values{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mainRecommendations__itensList--values p{
+    background-color: palevioletred;
+}
+
+.mainRecommendations__itensList--installment{
+    width: 100%;
+    display: block;
+}
+.mainRecommendations__itensList--installment p{
+    
+}
+
+
