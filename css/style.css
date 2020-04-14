@@ -82,7 +82,7 @@ body{
     display: block;
     color: #aaa;
     font-size: 13px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .header__up--buscaInput{
@@ -95,14 +95,20 @@ body{
 
 .header__up--buscaInput::-webkit-input-placeholder {
     color: #aaa;
+    font-size: 15px;
+    font-family: 'proxima_nova_ltthin';
 }
   
 .header__up--buscaInput::-moz-placeholder {  /* Firefox 19+ */
     color: #aaa;  
+    font-size: 15px;
+    font-family: 'proxima_nova_ltthin';
 }
   
 .header__up--buscaInput:-ms-input-placeholder {  
     color: #aaa;  
+    font-size: 15px;
+    font-family: 'proxima_nova_ltthin';
 }
 
 .header__up--btnMenu{
@@ -170,7 +176,7 @@ body{
 }
 
 .header__down--text a{
-    font-size: 12px;
+    font-size: 13px;
     color: #736c28;
 }
 
@@ -320,7 +326,7 @@ body{
 .mainPayment__card img{
     width: 32px;
     height: 30px;
-    display: center;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -332,7 +338,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .mainPayment__info a{
@@ -342,6 +348,7 @@ body{
     align-items: center;
     justify-content: end;
     font-size: 14px;
+    color: #3483fa;
 }
 
 /* inicio vitrine*/
@@ -377,7 +384,7 @@ body{
 }
 
 .mainRecommendations__itenslist{
-    background: brown;
+    background: white;
     margin: 0 10px;
     display: block;
     border-top: 1px solid #ededed;
@@ -389,7 +396,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: chartreuse;
     border-top: 1px solid #ededed;
 }
 
@@ -416,19 +422,30 @@ body{
 }
 
 .mainRecommendations__itenslist--name p{
-    font-size: 15px;
-    background-color: chocolate;
+    font-size: 14px;
 }
 
 .mainRecommendations__itensList--values{
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
-.mainRecommendations__itensList--values p{
-    background-color: palevioletred;
+.mainRecommendations__itensList--price p{
+    font-size: 20px;
+}
+
+.mainRecommendations__itensList--discount{
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 5px;
+}
+.mainRecommendations__itensList--discount p{
+   
+    font-size: 12px;
+    color: #00a650;
 }
 
 .mainRecommendations__itensList--installment{
@@ -436,7 +453,8 @@ body{
     display: block;
 }
 .mainRecommendations__itensList--installment p{
-    
+    font-size: 12px;
+    color: #00a650;
 }
 
 
