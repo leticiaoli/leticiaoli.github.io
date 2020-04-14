@@ -363,7 +363,7 @@ body{
 
 .mainRecommendations__header{
     width: calc(100% - 20px);
-    height: 50px;
+    height: 45px;
     margin: 24px 10px 0;
     display: flex;
     align-items: center;
@@ -374,7 +374,7 @@ body{
 
 .mainRecommendations__header a{
     width: 100%;
-    height: 50px;
+    height: 45px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -396,7 +396,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-top: 1px solid #ededed;
+    border-block-end:1px solid #ededed; ;
 }
 
 .mainRecommendations__itensList--item img{
@@ -455,6 +455,44 @@ body{
 .mainRecommendations__itensList--installment p{
     font-size: 12px;
     color: #00a650;
+}
+
+.mainRecommendations__viewMore{
+    width: calc(100% - 20px);
+    height: 45px;
+    margin: 0 10px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 0 0 5px 5px;
+}
+
+.mainRecommendations__viewMore a{
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 16px;
+    font-size: 14px;
+    color: #3483fa;
+    font-family: 'proxima_nova_ltsemibold';
+}
+
+.mainRecommendations__viewMore--iconArrow{
+    width: 12px;
+    height: 39px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainRecommendations__viewMore--iconArrow::before{
+    content: '\e903';
+    font-family: 'icomoon';
+    font-size: 10px;
+    color:#3483fa;
 }
 
 
