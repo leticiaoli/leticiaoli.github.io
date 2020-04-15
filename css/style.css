@@ -626,3 +626,66 @@ body{
     height: 190px;
     border-radius: 5px;
 }
+
+.mainCollections{
+    width: calc(100% - 20px);
+    height: auto;
+    display: block;
+    margin: 10px;
+    background: violet;
+}
+
+.mainCollections__Container{
+    width: 100%;
+    height: auto;
+    display: block;
+    background: #fff159;
+}
+
+.mainCollections__section-header{
+    width: 100%;
+    height: auto;
+    display:flex;
+    align-items: center;
+    justify-content: end;
+    background: rebeccapurple;
+}
+
+.mainCollections__arrow{
+    width: 14px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mainCollections__arrow::before{
+    content: '\e914';
+    font-family: 'icomoon';
+    font-size: 15px;
+    font-weight: none;
+    color:#3483fa;
+}
+
+.mainCollections__section-header p{
+    font-size: 18px;
+}
+
+.mainCollections__section-header a{
+    font-size: 18px;
+    margin: 0 10px 0 5px;
+}
+
+.mainCollections__collectionList{
+   width: 100%;
+   height: auto;
+   display:block;
+}
+
+.mainCollections__collectionList--item{
+   
+}
+
+.mainCollections__collectionList--item img{
+    width: 146px;
+    height: 160px;
+}
