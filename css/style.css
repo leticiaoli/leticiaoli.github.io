@@ -483,7 +483,7 @@ body{
 .mainRecommendations__viewMore--iconArrow{
     width: 12px;
     height: 39px;
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -495,4 +495,134 @@ body{
     color:#3483fa;
 }
 
+.mainRegistration{
+    width: calc(100% - 20px);
+    height: auto;
+    margin: 0 10px;
+    display: block;
+   background: white;
+    border-radius: 5px 5px;
+}
 
+.mainRegistration__info{ 
+    width: calc(100%- 20px);
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    margin: 0 10px 24px 10px;
+    flex-wrap: wrap;
+}
+
+.mainRegistration__info--title{
+    width: 100%;
+    height: auto;
+    margin: 15px 10px 0 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-self: flex-start;
+}
+
+.mainRegistration__info--title p{
+    margin: 0 0 14px;
+    font-size: 18px;
+    font-family: 'proxima_nova_ltsemibold';
+    color: black
+}
+
+.mainRegistration__Btn{
+    background: #3483fa;
+    width: 100%;
+    height: 47px;
+    display: block;
+    border: 0;
+    border-radius: 5px 5px;
+    margin: 0 10px 12px 10px;
+    font-size: 18px;
+    color: white;
+}
+
+.mainRegistration__register{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 16px 0 20px 0px;
+}
+
+.mainRegistration__register p{
+    color: #666;
+    font-size: 16px;
+}
+
+.mainRegistration__register a{
+   color: #3483fa; 
+   font-size: 16px;
+   padding-left: 5px;
+}
+
+.mainAdvertising__Block{
+    width: calc(100% - 20px);
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.mainAdvertising__info{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 20px 20px;
+}
+
+.mainAdvertising__info--title{
+    width: calc(100% - 10px);
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-self: start;
+    margin: 0 0 10px;
+}
+
+.mainAdvertising__info--title p{
+    font-size: 10px;
+    letter-spacing: 2.5px;
+}
+
+.mainAdvertising__info-textBold{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.mainAdvertising__info-textBold p{
+    font-size: 20px;
+    font-weight: 600;
+    color: #4b4b4b;
+}
+
+.mainAdvertising__link{
+    width: 100%;
+    height: auto;
+    display:flex;
+    align-items: flex-end;
+    flex-grow: 2;
+}
+
+.mainAdvertising__link a{
+    font-size: 14px;
+    font-weight: 600;
+    color:#3483fa;
+}
+
+.advertising__image img{
+    width: 153px;
+    height: 190px;
+    border-radius: 5px;
+}
