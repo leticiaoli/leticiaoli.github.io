@@ -646,12 +646,11 @@ body{
 }
 
 .mainCollections__section-header{
-    width: calc( 100% -20px);
+    width: 100%;
     height: auto;
     display: flex;
     align-items: center;
     justify-content: start;
-   
 }
 
 .mainCollections__arrow{
@@ -710,7 +709,7 @@ body{
     height: auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     margin: 10px 10px;
     border-radius: 3px 3px 3px 3px;
 }
@@ -718,6 +717,9 @@ body{
 .mainCollections__collectionList--item img{
     width: calc( 100% - 5px );
     height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 5px 5px 5px 5px;
     border-radius: 5px 5px 5px 5px;
     background: tomato;
@@ -738,4 +740,163 @@ body{
     font-size:16px ;
     font-weight: 600;
     color: #3483fa;
+}
+
+/* final lista coleções*/
+
+/* Inicio lista categorias*/
+
+.mainCategories{
+    width: 100%;
+    height: auto;
+    display: block;
+    background: pink;
+}
+
+.mainCategories__Container{
+    width: calc(100% - 20px);
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    flex-wrap: wrap;
+    background: plum;
+}
+
+.mainCategories__sectionHeader{
+    width: calc(100% - 10px);
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin: 0 10px 16px 0;
+    background: salmon;
+}
+
+.mainCategories__sectionHeader p {
+    font-size: 18px;
+}
+
+.mainCategories__list{
+    width: calc(100% - 20px);
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 10px;
+    justify-content: space-around;
+    background: teal;
+}
+
+.mainCategories__block{
+    width: calc(100% - 10px);
+    height: 182px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: springgreen;
+}
+
+.mainCategories__item{
+    width: calc(100% - 20px);
+    height: 182px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 5px 5px 5px;
+    background: darkorange;
+}
+
+.mainCategories__item p{
+
+}
+
+.mainCategories__icon--Car{
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainCategories__icon--Car::after{
+    content: '\e90e';
+    font-family: 'icomoon';
+    font-size: 50px;
+    color:#3483fa;
+}
+
+.mainCategories__icon--Cell{
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mainCategories__icon--Cell::after{
+    content: '\e90f';
+    font-family: 'icomoon';
+    font-size: 50px;
+    color:#3483fa;
+}
+
+.mainCategories__icon--Shirt{
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainCategories__icon--Shirt::after{
+    content: '\e910';
+    font-family: 'icomoon';
+    font-size: 50px;
+    color:#3483fa;
+}
+
+.mainCategories__icon--Armchair{
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainCategories__icon--Armchair::after{
+    content: '\e911';
+    font-family: 'icomoon';
+    font-size: 50px;
+    color:#3483fa;
+}
+
+.mainCategories__icon--Oven{
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainCategories__icon--Oven::after{
+    content: '\e912';
+    font-family: 'icomoon';
+    font-size: 50px;
+    color:#3483fa;
+}
+
+.mainCategories__icon--Steeringwheel{
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainCategories__icon--Steeringwheel::after{
+    content: '\e913';
+    font-family: 'icomoon';
+    font-size: 50px;
+    color:#3483fa;
 }
