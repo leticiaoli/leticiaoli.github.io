@@ -42,7 +42,7 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 0 10px;
-    border-bottom: 1px solid #c1b74d;
+    box-shadow: 0 1px 0 0 rgba(0,0,0,.1);
 }
 
 .header__up--logo{
@@ -505,6 +505,7 @@ body{
     display: block;
    background: white;
     border-radius: 5px 5px;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
 }
 
 .mainRegistration__info{ 
@@ -578,6 +579,7 @@ body{
     background: white;
     margin: 10px;
     border-radius: 5px;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
 }
 
 .mainAdvertising__info{
@@ -635,6 +637,110 @@ body{
 }
 
 /* final propaganda*/
+/*Inicio slide lojas oficiais*/
+
+.OfficialStores{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 25px 0 35px;
+}
+
+.officialStores__header{
+    width: calc(100% - 20px);
+    height: auto;
+    display: flex;
+    margin: 0 10px 16px 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.officialStores__header p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #666;
+}
+
+.officialStores__header a{
+    font-size: 16px;
+    font-weight: 600;
+    color: #3483fa;
+}
+
+.officialStores__allSlide{
+    width: 100%;
+    display: block;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.officialStores__Slide{
+    width: 328px;
+    height: auto;
+    display: inline-block;
+    box-sizing: border-box;
+    background: white;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+.officialStores__Slide:first-child{
+    margin-left: 10px;
+}
+
+.officialStores__Slide:last-child{
+    margin-right: 10px;
+}
+
+.officialStores__Slide--img{
+    width: 100%;
+    height: 125px;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+}
+
+.officialStores__Slide--img img{
+    width: auto;
+    height: 125px;
+}
+
+.officialStores__Slide--bottom{
+    width: 100%;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.officialStores__Slide--bottom p{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.officialStores__Slide--bottom .brand{
+    width: 80px;
+    height: 80px;
+    border-radius: 8.1px;
+    box-shadow: 0 3px 16px 0 rgba(0,0,0,.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    overflow: hidden;
+    position: absolute;
+    top: -30px;
+    left: 20px;
+}
+
+.officialStores__Slide--bottom .brand img{
+    width: 100%;
+    height: auto;
+
+}
+/*final lojas oficiais*/
 
 /* inicio lista coleções*/
 
@@ -642,7 +748,7 @@ body{
     width: 100%;
     height: auto;
     display: block;
-    margin-top: 24px;
+    margin-top: 34px;
 }
 
 .mainCollections__section-header{
@@ -742,7 +848,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 10px 10px 10px 10px;
+    margin: 5px 10px 10px 10px;
     border-radius: 5px 5px;
     background: white;
 }
