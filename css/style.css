@@ -1084,7 +1084,7 @@ body{
     flex-wrap: wrap;
     padding: 35px 45px 20px;
     box-sizing: border-box;
-    margin: 15px 0 0;
+    margin: 15px 0 20px;
 }
 
 .slideInfo__item--title {
@@ -1115,7 +1115,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -20px;
+    margin-top: -30px;
 }
 
 .slideInfo .slick-dots li button{
