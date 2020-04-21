@@ -64,6 +64,7 @@ body{
     display: inline-flex;
     align-items: center;
     margin: 0 10px;
+    transition: all linear .1s;
 }
 
 .header__up--buscaBtn{
@@ -93,6 +94,10 @@ body{
     border-radius: 0 3px 3px 0;
 }
 
+.header__up--buscaInput:focus{
+    outline: none;
+}
+
 .header__up--buscaInput::-webkit-input-placeholder {
     color: #aaa;
     font-size: 15px;
@@ -109,6 +114,25 @@ body{
     color: #aaa;  
     font-size: 15px;
     font-family: 'proxima_nova_ltthin';
+}
+
+/* Active */
+.header__up--busca.active{
+    width: 100%;
+    position: absolute;
+    background: #fff;
+    margin: 0;
+    left: 0;
+    top: 0;
+    transition: all linear .1s;
+}
+
+.header__up--busca.active .header__up--buscaBtn::after{
+    content: '\f104';
+    font-family: 'fontAwesome';
+    display: block;
+    color: #333;
+    font-size: 13px;
 }
 
 .header__up--btnMenu{
