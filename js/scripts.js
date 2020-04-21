@@ -31,18 +31,19 @@ $(document).ready(function () {
     }
 
     function inputClear() {
-        let boxSearch = $('.header__up--buscaInput')
 
-        boxSearch.append()
-
-        boxSearch.keyup(function(){
+        $('.header__up--buscaInput').keyup(function(){
             let qtyCaracter = $('.header__up--buscaInput').val().length
             if(qtyCaracter > 0) {
-                alert('mais de zero')
+                $('.header__up--CloseBtn').fadeIn()
             } else {
-                alert('menos ou igual a zero')
+                $('.header__up--CloseBtn').fadeOut()
             }
-            
+        })
+
+        $('.header__up--CloseBtn').click(function(){
+            $('.header__up--buscaInput').val('').focus()
+            $('.header__up--CloseBtn').fadeOut()
         })
     }
 
