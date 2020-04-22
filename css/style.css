@@ -132,8 +132,8 @@ body{
 }
 
 .header__up--busca.active .header__up--buscaBtn::after{
-    content: '\f104';
-    font-family: 'fontAwesome';
+    content: '\e91f';
+    font-family: 'icomoon';
     display: block;
     color: #333;
     font-size: 13px;
@@ -143,10 +143,21 @@ body{
     width: 20px;
     height: 20px;
     position: absolute;
-    background: #fff159;
+    background: white;
     display: none;
-    top: 0;
-    right: 0;
+    border: 0;
+    top: 16px;
+    right: 20px;
+}
+
+.header__up--CloseBtn::before{
+    content: '\e920';
+    font-family: 'icomoon';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    font-size: 13px;
 }
 
 .header__up--btnMenu{
@@ -162,6 +173,25 @@ body{
     content: '\e900';
     font-family: 'icomoon';
     font-size: 23px;
+    font-weight: 100;
+}
+
+.header__up--btnMenuClose{
+    width: 24px;
+    height:  30px;
+    position: absolute;
+    background: #fff159;
+    display: none;
+    padding: 0;
+    border: 0;
+    top: 13px;
+    right: 52.5px;
+}
+
+.header__up--btnMenuClose::before{
+    content: '\e920';
+    font-family: 'icomoon';
+    font-size: 18px;
     font-weight: 100;
 }
 
@@ -235,8 +265,28 @@ body{
 
 /* Finaliza header do site */
 
-
 /*inicio nav*/
+
+.menu{
+    width: 100%;
+    display: none;
+    margin-top: -39px;
+    background: white;
+    position: relative;
+    z-index: 9;
+    border-top: solid 1px #e6e6e6;
+}
+
+.menu::before{
+    content: '\f0d8';
+    font-family:'FontAwesome';
+    font-size: 25px;
+    color: white;
+    position: absolute;
+    margin-top: -17px;
+    right: 58px;
+    
+}
 
 .menu__login{
     width: 100%;
@@ -244,6 +294,7 @@ body{
     display: block;
     padding: 18px 24px;
     box-sizing: border-box;
+    background:white;
 }
 
 .menu__info{
@@ -320,9 +371,114 @@ body{
     color: #3484fa;
 }
 
+.menu__list{
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 16px 0;
+    box-sizing: border-box;
+    background: #fff;
+    border-top: solid 1px #e6e6e6;
+}
 
+.menu__list--item{
+    width: calc(100% - 46px);
+    height: 31px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 8px 20px 8px 26px;
+}
 
+.menu__list--item a{
+    font-size: 14px;
+    color:#000;
+    font-weight: 600;
+}
 
+.menu-link-tag {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 2px 6px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #3483fa;
+}
+
+.menu__list--item i{
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin-right: 20px;
+}
+
+.menu__list--iconHome::before{
+    content: '\e916';
+    font-family: 'icomoon';
+    font-style: normal;
+   font-size: 20px;
+}
+
+.menu__list--iconDiscount::before{
+    content: '\e917';
+    font-family: 'icomoon';
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.menu__list--iconClock::before{
+    content: '\e918';
+    font-family: 'icomoon';
+    font-style: normal;
+    font-size: 20px;
+}
+
+.menu__list--iconPriceTag::before{
+    content: '\e919';
+    font-family: 'icomoon';
+    font-style: normal;
+    font-size: 20px;
+}
+
+.menu__list--iconList::before{
+    content: '\e91a';
+    font-family: 'icomoon';
+    font-style: normal;
+    font-size: 20px;
+}
+
+.menu__list--iconBasket::before{
+    content: '\e91b';
+    font-family: 'icomoon';
+    font-style: normal;
+    font-size: 20px;
+}
+
+.menu__list--iconStore::before{
+    content: '\e91c';
+    font-family: 'icomoon';
+    font-style: normal;
+    font-size: 20px;
+}
+
+.menu__list--iconInterrogation::before{
+    content: '\e91d';
+    font-family: 'icomoon';
+    font-style: normal;
+    font-size: 20px;
+}
+
+.menu__list--iconDownload::before{
+    content: '\e91e';
+    font-family: 'icomoon';
+    font-style: normal;
+    font-size: 20px;
+}
+
+/*final nav*/
 
 /* Inicia slide principal do site */
 

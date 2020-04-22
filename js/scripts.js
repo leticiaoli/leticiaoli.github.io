@@ -21,11 +21,17 @@ $(document).ready(function () {
         let boxSearch = $('.header__up--buscaInput')
 
         boxSearch.focusin(function(){
+            let qtyCaracter = $('.header__up--buscaInput').val().length
+            
             $('.header__up--busca').addClass('active')
+            if(qtyCaracter > 0){
+                $('.header__up--CloseBtn').hide()
+            }
         })
 
         boxSearch.focusout(function(){
             $('.header__up--busca').removeClass('active')
+            $('.header__up--CloseBtn').hide()
         })
 
     }
@@ -47,10 +53,20 @@ $(document).ready(function () {
         })
     }
 
+    function menuList() {
+        $('.header__up--btnMenu').click(function(){
+            $('.menu').slideToggle()
+            $('.header__up--btnMenuClose').fadeToggle()
+        })
+    }
+
+
+
     // funcs
     mainSlide()
     infoSlide()
     searchFocus()
     inputClear()
+    menuList()
 
 })  
