@@ -60,6 +60,26 @@ $(document).ready(function () {
         })
     }
 
+    function menuListColletions() {
+        $('.mainCollections__section-header a,.mainCollections__arrow').click(function(event){
+            event.preventDefault()
+            $('.mainCollections__optionsCollections').fadeToggle()
+            $('.mainCollections__arrow').toggleClass('open')
+        })
+
+        $('.mainCollections__options--item').click(function(){
+            $('.mainCollections__options--item').removeClass('active')
+            $(this).addClass('active')
+
+            let valorSelecionado = $(this).text()
+            $('.mainCollections__section-header a').text(valorSelecionado)
+
+            $('.mainCollections__optionsCollections').fadeOut() 
+        })
+
+
+    }
+
 
 
     // funcs
@@ -68,5 +88,6 @@ $(document).ready(function () {
     searchFocus()
     inputClear()
     menuList()
+    menuListColletions()
 
 })  

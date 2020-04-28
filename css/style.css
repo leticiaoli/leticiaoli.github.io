@@ -1032,6 +1032,7 @@ body{
     height: auto;
     display: block;
     margin-top: 34px;
+    position: relative;
 }
 
 .mainCollections__section-header{
@@ -1057,6 +1058,12 @@ body{
     font-size: 15px;
     font-weight: none;
     color:#3483fa;
+    transition: transform linear .3s;
+}
+
+.mainCollections__arrow.open::before{
+    transform: rotate(-180deg);
+    transition: transform linear .3s;
 }
 
 .mainCollections__section-header p{
@@ -1067,6 +1074,52 @@ body{
 .mainCollections__section-header a{
     font-size: 18px;
     margin: 0 10px 0 5px;
+    color: #666;
+}
+
+.mainCollections__optionsCollections{
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+.mainCollections__optionsList{
+    width: calc(100% - 20px);
+    height: auto;
+    display: block;
+    position: absolute;
+    margin: 0 10px;
+    border-radius: 3px;
+    background:white;
+}
+
+.mainCollections__options--item{
+    width: 100%;
+    height: 60px;
+    border-top: 1px solid #ededed;
+}
+
+.mainCollections__options--item button{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    padding:0 30px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background: white;
+    border: none;
+}
+
+.mainCollections__options--item.active{
+    width: calc(100% - 4px);
+    border-left: 4px solid #3483fa;
+}
+
+.mainCollections__options--item.active button{
+    color:#3483fa;
 }
 
 .mainCollections__Container{
@@ -1077,7 +1130,7 @@ body{
     justify-content: center;
 
 }
-.mainCollections__collectionList{
+.mainCollections__list{
     width: 100%;
     height: auto;
     display: flex;
@@ -1085,7 +1138,7 @@ body{
     justify-content: center;
 }
 
-.mainCollections__collectionList ul{
+.mainCollections__list ul{
     width: 100%;
     height: auto;
     display: flex;
@@ -1094,7 +1147,7 @@ body{
     flex-wrap: wrap;
 }
 
-.mainCollections__collectionList--item{
+.mainCollections__list--item{
     width: 100%;
     height: auto;
     display: flex;
@@ -1103,20 +1156,20 @@ body{
     border-radius: 3px 3px 3px 3px;
 }
 
-.mainCollections__collectionList--item a{
+.mainCollections__list--item a{
     display: inline-block;
     margin: 5px;
 }
 
-.mainCollections__collectionList--item a:first-child{
+.mainCollections__list--item a:first-child{
     margin-left: 10px;
 }
 
-.mainCollections__collectionList--item a:last-child{
+.mainCollections__list--item a:last-child{
     margin-right: 10px;
 }
 
-.mainCollections__collectionList--item img{
+.mainCollections__list--item img{
     width: 100%;
     height: auto;
     display: flex;

@@ -26,3 +26,7 @@ main{
     background: #ededed;
 }
 
+*:focus{
+    outline: none;
+}
+
