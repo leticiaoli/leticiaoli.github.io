@@ -4,6 +4,8 @@ Este projeto consiste em um clone da home page versão mobile do Mercado Livre, 
 
 ## Demonstração
 Link para a demonstração ao vivo: leticiaoli.github.io
+
+
 ![printMercadoLivre](https://github.com/leticiaoli/leticiaoli.github.io/assets/61666898/2cfd0fe9-97be-4978-9599-8787b5b7635a)
 
 ## Funcionalidades
